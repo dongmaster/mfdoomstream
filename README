@@ -1,5 +1,17 @@
 Hello. This is the source code for http://mfdoomstream.hol.es
 
-README will be updated later.
+This PHP code will automatically play songs and add albums from the "music" folder on the main page of the site.
+You do not have to worry about an album not having album art on the main page. HOWEVER, if an album does not have an image in the album folder then the album list on the main page and album page will be fucked up.
 
-Source code will be added soon.
+So, put the image noimg.png from the img folder in every album that does not have an album image.
+
+Songs must be .ogg
+
+Folder paths must be as follows:
+music/[album]/[song].ogg
+
+Songs must have a number in front of them if you want to play songs as a playlist (playing an album in order (playlist.php)).
+Example: 01. dong.ogg
+Example: 02 pong.ogg
+
+If a song does not play in playlist mode then there might be a special character that fucks everything up (# does not work in the filename for some reason).
