@@ -1,0 +1,180 @@
+body {
+	background-color: #161616;
+}
+
+p {
+	color: white;
+}
+
+button {
+	background-color: #222222;
+	color: white;
+	border-color: #484848;
+}
+
+.button {
+	display: inline-block;
+	width: 14%;
+	height: 30px;
+}
+
+#showAlbShowSongCenter {
+	display: block;
+}
+
+.folder, .folder2 {
+	color: #595;
+		text-decoration: underline;
+		text-align: left;
+		font-size: 18px;
+}
+
+.folder3, .folder4 {
+	color: #595;
+	text-decoration: underline;
+	text-align: left;
+	font-size: 18px;
+}
+
+p, .folder, .folder2 {
+	font-family: bitstream charter, segoe ui, tahoma, times new roman;
+}
+
+.folder:active, .folder2:active {
+	color: #707070;
+}
+
+.info {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.specFolder {
+	position: absolute;
+	color: #595;
+	text-decoration: underline;
+	text-align: left;
+	margin-top: 90px;
+	margin-left: 5px;
+	font-size: 18px;
+}
+
+.specFolder2 {
+	max-width: 35%;
+}
+
+#albumImg {
+	display: block;
+	max-width: 60%;
+	max-height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#music {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#nextSongButton {
+	display: inline-block;
+	margin-left: 4%;
+}
+
+#prevSongButton {
+	display: inline-block;
+	margin-left: 34%;
+}
+
+#homeButton {
+	display: block;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#centerBlock {
+	display: inline-block;
+	text-align: left;
+	float: left;
+	max-width: 50%;
+}
+
+#centerBlock2 {
+	display: inline-block;
+	text-align: left;
+	float: right;
+	max-width: 50%;
+}
+
+#centerBlock3 {
+	display: block; 
+	margin-left: 32%;
+}
+
+#switchSongButton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#showAlbumsButton {
+	display: block;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#showAlbumsButton2 {
+	display: inline-block;
+	margin-left: 12%;
+}
+
+#showSongsButton {
+	display: inline-block;
+	margin-left: 45%;
+}
+
+#songIndexError {
+	position: absolute;
+	display: block;
+	width: 99%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	padding: 7px;
+	background-color: #b11212;
+	color: white;
+	text-shadow: 3px 0 0 black;
+}
+
+#noJavaScript {
+	position: absolute;
+	display: block;
+	width: 99%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	padding: 7px;
+	background-color: #b11212;
+	color: white;
+	text-shadow: 3px 0 0 black;
+}
+
+.showAlbumImg {
+	max-width: 200px;
+	display: inline-block;
+}
+
+/* ip.php */
+/*  \ /  */
+
+#ipAddress {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 24px;
+}
