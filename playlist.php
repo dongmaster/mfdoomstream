@@ -13,7 +13,7 @@
 			$album = $_GET['a']; //Album index
 			$index = $_GET['s']; //Song index
 			
-			$files = glob('Music/*/'); //Get all folders in the Music folder
+			$files = glob('music/*/'); //Get all folders in the Music folder
 			
 			$folder = $files[$album]; //Get a specific folder based on the link you pressed earlier on the home page.
 			
@@ -42,7 +42,7 @@
 				$albumArt = '../../img/noimg.png';
 			}
 			
-			$files = glob('Music/*/'); //For some reason this resets so I set this to the right value again.
+			$files = glob('music/*/'); //For some reason this resets so I set this to the right value again.
 			$folder = $files[$album]; //^Same as above
 			
 			$test1;
@@ -62,7 +62,7 @@
 				closedir($folder);
 			}
 			
-			$files = glob('Music/*/'); //For some reason this resets so I set this to the right value again.
+			$files = glob('music/*/'); //For some reason this resets so I set this to the right value again.
 			$folder = $files[$album]; //^Same as above
 			$albumPath = substr($folder, 6, strlen($folder)-strlen($folder)-1);
 			echo '<p class="info" id="album"> Album: ' . $albumPath . '</p>';
@@ -91,7 +91,7 @@
 			<div id="centerBlock">
 			
 		<?php
-			$images = glob('Music/*/*.jp*g');
+			$images = glob('music/*/*.jp*g');
 			
 			$folderCounter = 0; //Useful for determining what album is chosen.
 			foreach($files as $foldersss) { //Makes links to every album.

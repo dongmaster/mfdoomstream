@@ -13,7 +13,7 @@
 		<?php
 			echo '<div class="folder3" style="display: none;">stupid div</div>';
 			
-			$files = glob('Music/*/*.ogg'); //Makes an array with every album and song available
+			$files = glob('music/*/*.ogg'); //Makes an array with every album and song available
 			$fname = $files[array_rand($files)]; //Chooses the album and song. 
 			$albumPath = substr($fname, strpos($fname, '/', 1)+1, strpos($fname, '/', 7)-6); //Uses magic to get the album.
 			echo '<p class="info" id="album"> Album: ' . $albumPath . '</p>'; //Shows the user what song is playing
@@ -26,10 +26,10 @@
 			echo '<button id="switchSongButton" class="button" onclick="location.reload();">Switch song</button>' . '<br></br>'; //Switch song button
 			
 			
-			$folders = glob('Music/*'); //Get all the folders.
+			$folders = glob('music/*'); //Get all the folders.
 			
 			
-			$albumPath = 'Music/' . substr($fname, strpos($fname, '/', 1)+1, strpos($fname, '/', 7)-6); //Get album path. uses magic.
+			$albumPath = 'music/' . substr($fname, strpos($fname, '/', 1)+1, strpos($fname, '/', 7)-6); //Get album path. uses magic.
 			
 			$notUseless = 1;
 			if ($albumPath = opendir($albumPath)) { //Goes through the album folder and returns the album art.
@@ -49,12 +49,12 @@
 				$albumArt = '../../img/noimg.png'; //Sets a default album image for albums that do not have an album image (only applies to the currently random song on the main page)
 			}
 			
-			$albumPath = 'Music/' . substr($fname, strpos($fname, '/', 1)+1, strpos($fname, '/', 7)-6); //Gets the album path. don't ask why there are several lines of this.
+			$albumPath = 'music/' . substr($fname, strpos($fname, '/', 1)+1, strpos($fname, '/', 7)-6); //Gets the album path. don't ask why there are several lines of this.
 			echo '<img id="albumImg" src="'. $albumPath .'/'. $albumArt . '"/>'; //Album Art.
 			
 			echo '<button class="button" id="showAlbumsButton" onclick="albumToggle()">Show Albums</button>'; //I don't know why this is in the PHP code
 			
-			$images = glob('Music/*/*.jp*g'); //Get all JPG/JPEG images
+			$images = glob('music/*/*.jp*g'); //Get all JPG/JPEG images
 			
 			?>
 			
@@ -73,7 +73,7 @@
 
 			<?php
 				$albumArt;
-				$albumPath = 'Music/' . substr($fname, strpos($fname, '/', 1)+1, strpos($fname, '/', 7)-6); //Uses magic to get the name of the album.
+				$albumPath = 'music/' . substr($fname, strpos($fname, '/', 1)+1, strpos($fname, '/', 7)-6); //Uses magic to get the name of the album.
 			?>
 		<script src='js.js'></script>
 	</body>
