@@ -9,7 +9,7 @@
 		<?php
 			$pictures = glob('dogs/*');
 			$picture = $pictures[array_rand($pictures)];
-			echo '<img style="display: block; margin-left: auto; margin-right: auto;" src="'.$picture.'"/>';
+			echo '<img style="background-color: black display: block; margin-left: auto; margin-right: auto; src="'.$picture.'"/>';
 		?>
 		<script>
 			window.addEventListener('click', function() {
