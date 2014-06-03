@@ -11,6 +11,7 @@
 	<body>
 		<!-- <div id='noJavaScript'>JavaScript is disabled! I suggest turning on JavaScript if you want to play specific albums.</div> -->
 		<?php
+		echo 'smoke weed everyday';
 			echo '<div class="folder3" style="display: none;">stupid div</div>';
 			
 			$files = glob('music/*/*.ogg'); //Makes an array with every album and song available
