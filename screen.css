@@ -1,5 +1,5 @@
 body {
-	background-color: #161616;
+	background-color: #906;
 }
 
 p {
@@ -7,7 +7,7 @@ p {
 }
 
 button {
-	background-color: #222222;
+	background-color: #090;
 	color: white;
 	border-color: #484848;
 }
@@ -30,7 +30,7 @@ button {
 }
 
 .folder3, .folder4 {
-	color: #595;
+	color: #090;
 	text-decoration: underline;
 	text-align: left;
 	font-size: 18px;
@@ -41,7 +41,7 @@ p, .folder, .folder2 {
 }
 
 .folder:active, .folder2:active {
-	color: #707070;
+	color: #090;
 }
 
 .info {
@@ -52,7 +52,7 @@ p, .folder, .folder2 {
 
 .specFolder {
 	position: absolute;
-	color: #595;
+	color: #090;
 	text-decoration: underline;
 	text-align: left;
 	margin-top: 90px;
