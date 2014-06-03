@@ -46,7 +46,7 @@
 			}
 			
 			if($notUseless == 1) {
-				$albumArt = '../../img/noimg.png';
+				$albumArt = '../../img/noimg.png'; //Sets a default album image for albums that do not have an album image (only applies to the currently random song on the main page)
 			}
 			
 			$albumPath = 'Music/' . substr($fname, strpos($fname, '/', 1)+1, strpos($fname, '/', 7)-6); //Gets the album path. don't ask why there are several lines of this.
